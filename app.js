@@ -1,19 +1,27 @@
 const express = require('express');
+const path = require('path');// comes with node, lets us navigate the file system/folders
 // const http = require('http');
 // const hostname = '127.0.0.1'; // request to got to that location
-const port = 3000;
-const app = express();
+//heroku assigned port
 
+const port = process.env.PORT || 3000; // a double pipe "||" means "or"
+const app = (express.static('public'));
+
+app.use(express.static)
 app.get('/', (req, res) => {
-    res.send('hello world');
+    console.log('at the home route');
+    res.sendFile(path.join(__dirname + '/views/index.html'));
+    //this builds local host:3000/views/index.html
 })
 
 app.get('/contact', (req, res) => {
-    res.send('on the contact page');
+    res.sendFile(path.join(__dirname + '/views/contact.html'));
+    //this builds local host:3000/views/contact.html
 })
 
 app.get('/portfolio', (req, res) => {
-    res.send('on portfolio page');
+    res.sendFile(path.join(__dirname + '/views/portfolio.html'));
+    //this builds local host:3000/views/portfolio.html
 })
 
 app.listen(port, () => {
