@@ -19,8 +19,8 @@ app.get('/contact', (req, res) => {
     //this builds local host:3000/views/contact.html
 })
 
-app.get('/portfolio', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/portfolio.html'));
+app.get('/gallery', (req, res) => {
+    res.sendFile(path.join(__dirname + '/views/gallery.html'));
     //this builds local host:3000/views/portfolio.html
 })
 
