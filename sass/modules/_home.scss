@@ -5,6 +5,10 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+html {
+    background-color: #28C9CD;
+}
+
 header {
     display:hidden;
 }
@@ -14,6 +18,7 @@ body {
     background-color: #252525;
     color:white;
     display: flex;
+    border-radius: 0px 0px 60px 60px;
 }
 
 
@@ -23,7 +28,7 @@ body h1 {
 
 main {
     display: flex;
-    padding: 25px 10px 10px 0px;
+    padding: 25px 10px 30px 0px;
 }
 
 article h1 {
@@ -32,8 +37,9 @@ article h1 {
     padding: 25px 25px 25px 25px;
 }
 article p {
-    padding: 25px 25px 25px 25px;
+    padding: 100px 25px 25px 25px;
     width: 60%;
+    height: 50%;
 }
 
 
@@ -56,7 +62,21 @@ article p {
     border-radius: 15px;
     background-image: linear-gradient(#292FE5,#28C9CD);
     border: none;
-    margin: 150px 15px 0px 15px;
+    margin: 150px 15px 15px 15px;
+    cursor:pointer;
+    color:white;
+}
+
+.imgCont1 {
+    display: flex;
+    justify-content: center;
+}
+
+.imgCont1 img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
 }
 
 .boxTwo {
@@ -69,14 +89,35 @@ article p {
     border-radius: 15px;
 }
 
+.boxOne button:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
 .boxTwo button{
-    display: flex;
     height:25px;
     width:40px;
     border-radius: 15px;
     background-image: linear-gradient(#292FE5,#28C9CD);
     border: none;
-    margin: 150px 15px 0px 15px;
+    margin: 150px 15px 15px 15px;
+    cursor:pointer;
+    color:white;
+}
+
+.boxTwo button:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.imgCont2 {
+    display: flex;
+    justify-content: center;
+}
+
+.imgCont2 img {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
 }
 }
 /*Tablet-------------------------------*/

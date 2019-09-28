@@ -3,6 +3,9 @@
   * {
     font-family: 'Nunito Sans', sans-serif; }
 
+  html {
+    background-color: #28C9CD; }
+
   header {
     display: hidden; }
 
@@ -10,14 +13,15 @@
     height: 75%;
     background-color: #252525;
     color: white;
-    display: flex; }
+    display: flex;
+    border-radius: 0px 0px 60px 60px; }
 
   body h1 {
     font-size: 125%; }
 
   main {
     display: flex;
-    padding: 25px 10px 10px 0px; }
+    padding: 25px 10px 30px 0px; }
 
   article h1 {
     color: white;
@@ -25,8 +29,9 @@
     padding: 25px 25px 25px 25px; }
 
   article p {
-    padding: 25px 25px 25px 25px;
-    width: 60%; }
+    padding: 100px 25px 25px 25px;
+    width: 60%;
+    height: 50%; }
 
   .mainItems {
     display: flex; }
@@ -46,7 +51,19 @@
     border-radius: 15px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 0px 15px; }
+    margin: 150px 15px 15px 15px;
+    cursor: pointer;
+    color: white; }
+
+  .imgCont1 {
+    display: flex;
+    justify-content: center; }
+
+  .imgCont1 img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    z-index: 1; }
 
   .boxTwo {
     display: flex;
@@ -57,14 +74,31 @@
     margin: 15px 15px 15px 15px;
     border-radius: 15px; }
 
+  .boxOne button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
   .boxTwo button {
-    display: flex;
     height: 25px;
     width: 40px;
     border-radius: 15px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 0px 15px; } }
+    margin: 150px 15px 15px 15px;
+    cursor: pointer;
+    color: white; }
+
+  .boxTwo button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+  .imgCont2 {
+    display: flex;
+    justify-content: center; }
+
+  .imgCont2 img {
+    width: 125px;
+    height: auto;
+    position: absolute;
+    z-index: 1; } }
 /*Tablet-------------------------------*/
 @media (max-width: 768px) and (min-width: 501px) {
   * {
@@ -151,7 +185,12 @@
   nav ul {
     display: flex;
     font-family: 'Nunito Sans', sans-serif;
-    padding: 0px 0px 75px 0px; } }
+    padding: 0px 0px 75px 0px; }
+
+  ul li:hover {
+    border-right: 4px solid #fff;
+    padding-right: 6px;
+    cursor: pointer; } }
 /*Tablet-------------------------------*/
 @media (max-width: 768px) and (min-width: 501px) {
   nav {
@@ -172,7 +211,12 @@
     padding: 10px 10px 10px 10px;
     height: 60px;
     width: 60px;
-    position: absolute; } }
+    position: absolute; }
+
+  ul li:hover {
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+    cursor: pointer; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   nav {
@@ -193,7 +237,12 @@
     padding: 10px 10px 10px 10px;
     height: 60px;
     width: 60px;
-    position: absolute; } }
+    position: absolute; }
+
+  ul li:hover {
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+    cursor: pointer; } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
