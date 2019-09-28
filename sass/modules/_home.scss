@@ -5,6 +5,10 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+header {
+    display:hidden;
+}
+
 body {
     height: 75%;
     background-color: #252525;
@@ -32,9 +36,6 @@ article p {
     width: 60%;
 }
 
-nav ul {
-    padding: 0px 0px 75px 0px;
-}
 
 .mainItems {
     display: flex;
@@ -81,9 +82,85 @@ nav ul {
 /*Tablet-------------------------------*/
 @media (max-width:768px) and (min-width: 501px){
 
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    height: 75%;
+    background-color: #252525;
+    color:white;
+}
+
+
+body h1 {
+    font-size: 125%;
+}
+
+main {
+   width: 100%;
+   height: 75px;
+   position: relative;
+   margin-top: -16px;
+
+
+}
+
+article h1 {
+    color:white;
+    font-size: 125%;
+    padding: 25px 25px 25px 25px;
+}
+article p {
+    padding: 25px 25px 25px 25px;
+    width: 60%;
+}
+
+
+.mainItems {
+    display: flex;
+}
 }
 
 /*Desktop-------------------------------*/
 @media (min-width:769px){
+    * {
+        font-family: 'Nunito Sans', sans-serif;
+    }
     
+    body {
+        height: 75%;
+        background-color: #252525;
+        color:white;
+    }
+    
+    
+    body h1 {
+        font-size: 125%;
+    }
+    
+    main {
+       width: 100%;
+       height: 75px;
+       position: relative;
+       margin-top: -16px;
+    
+    
+    }
+    
+    article h1 {
+        color:white;
+        font-size: 125%;
+        padding: 25px 25px 25px 25px;
+    }
+    article p {
+        padding: 25px 25px 25px 25px;
+        width: 60%;
+    }
+    
+    
+    .mainItems {
+        display: flex;
+    }
 }
