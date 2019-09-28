@@ -3,6 +3,9 @@
   * {
     font-family: 'Nunito Sans', sans-serif; }
 
+  header {
+    display: hidden; }
+
   body {
     height: 75%;
     background-color: #252525;
@@ -24,9 +27,6 @@
   article p {
     padding: 25px 25px 25px 25px;
     width: 60%; }
-
-  nav ul {
-    padding: 0px 0px 75px 0px; }
 
   .mainItems {
     display: flex; }
@@ -66,21 +66,65 @@
     border: none;
     margin: 150px 15px 0px 15px; } }
 /*Tablet-------------------------------*/
-/*Desktop-------------------------------*/
-/*-------MOBILE------------------*/
-@media (max-width: 500px) {
-  header {
-    position: absolute; }
+@media (max-width: 768px) and (min-width: 501px) {
+  * {
+    font-family: 'Nunito Sans', sans-serif; }
 
-  .logo {
-    position: absolute;
-    height: 40px;
-    width: 40px; }
+  body {
+    height: 75%;
+    background-color: #252525;
+    color: white; }
 
-  logo img {
-    padding: 10px 10px 10px 10px; } }
-/*Tablet-------------------------------*/
+  body h1 {
+    font-size: 125%; }
+
+  main {
+    width: 100%;
+    height: 75px;
+    position: relative;
+    margin-top: -16px; }
+
+  article h1 {
+    color: white;
+    font-size: 125%;
+    padding: 25px 25px 25px 25px; }
+
+  article p {
+    padding: 25px 25px 25px 25px;
+    width: 60%; }
+
+  .mainItems {
+    display: flex; } }
 /*Desktop-------------------------------*/
+@media (min-width: 769px) {
+  * {
+    font-family: 'Nunito Sans', sans-serif; }
+
+  body {
+    height: 75%;
+    background-color: #252525;
+    color: white; }
+
+  body h1 {
+    font-size: 125%; }
+
+  main {
+    width: 100%;
+    height: 75px;
+    position: relative;
+    margin-top: -16px; }
+
+  article h1 {
+    color: white;
+    font-size: 125%;
+    padding: 25px 25px 25px 25px; }
+
+  article p {
+    padding: 25px 25px 25px 25px;
+    width: 60%; }
+
+  .mainItems {
+    display: flex; } }
 /*-------MOBILE------------------*/
 @media (max-width: 500px) {
   aside {
@@ -90,8 +134,10 @@
     list-style: none;
     display: flex;
     min-height: 500px;
-    width: 50px;
-    padding: 25px 25px 25px 25px; }
+    width: 50px; }
+
+  .logo img {
+    padding: 5px 5px 5px 5px; }
 
   nav {
     display: inline;
@@ -104,9 +150,50 @@
 
   nav ul {
     display: flex;
-    font-family: 'Nunito Sans', sans-serif; } }
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0px 0px 75px 0px; } }
 /*Tablet-------------------------------*/
+@media (max-width: 768px) and (min-width: 501px) {
+  nav {
+    background-color: #28c2ce;
+    background-image: linear-gradient(to right, #292FE5, #28C9CD);
+    list-style: none;
+    position: static;
+    height: 75px;
+    width: 100%; }
+
+  nav ul {
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    float: right;
+    padding: 25px 25px 25px 25px; }
+
+  .logo img {
+    padding: 10px 10px 10px 10px;
+    height: 60px;
+    width: 60px;
+    position: absolute; } }
 /*Desktop-------------------------------*/
+@media (min-width: 769px) {
+  nav {
+    background-color: #28c2ce;
+    background-image: linear-gradient(to right, #292FE5, #28C9CD);
+    list-style: none;
+    position: static;
+    height: 75px;
+    width: 100%; }
+
+  nav ul {
+    display: flex;
+    font-family: 'Nunito Sans', sans-serif;
+    float: right;
+    padding: 25px 25px 25px 25px; }
+
+  .logo img {
+    padding: 10px 10px 10px 10px;
+    height: 60px;
+    width: 60px;
+    position: absolute; } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)

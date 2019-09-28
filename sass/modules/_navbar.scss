@@ -10,9 +10,11 @@ aside {
     display: flex;
     min-height: 500px;
     width: 50px;
-    padding: 25px 25px 25px 25px;
+    
 }
-
+ .logo img {
+     padding:5px 5px 5px 5px;
+ }
 
 nav {
     display: inline;
@@ -24,19 +26,68 @@ nav {
     float: left;
 }
 
+
 nav ul {
     display: flex;
     // ^allows nav list turn left
     font-family: 'Nunito Sans', sans-serif;
+    padding: 0px 0px 75px 0px;
+    
 }
 }
 
 /*Tablet-------------------------------*/
 @media (max-width:768px) and (min-width: 501px){
+    nav {
+        background-color: #28c2ce;
+        background-image: linear-gradient(to right, #292FE5,#28C9CD);
+        //^sidenav gradient
+        list-style: none;
+        position: static;
+        height: 75px;
+        width: 100%;
+    }
+    
+    nav ul {
+        display: flex;
+        font-family: 'Nunito Sans', sans-serif;
+        float: right;
+        padding: 25px 25px 25px 25px;
+    }
 
+    .logo img {
+        padding:10px 10px 10px 10px;
+        height: 60px;
+        width:60px;
+        position: absolute
+    }
+   
 }
 
 /*Desktop-------------------------------*/
 @media (min-width:769px){
+    nav {
+        background-color: #28c2ce;
+        background-image: linear-gradient(to right, #292FE5,#28C9CD);
+        //^sidenav gradient
+        list-style: none;
+        position: static;
+        height: 75px;
+        width: 100%;
+    }
     
+    nav ul {
+        display: flex;
+        font-family: 'Nunito Sans', sans-serif;
+        float: right;
+        padding: 25px 25px 25px 25px;
+    }
+
+    .logo img {
+        padding:10px 10px 10px 10px;
+        height: 60px;
+        width:60px;
+        position: absolute
+    }
+   
 }
