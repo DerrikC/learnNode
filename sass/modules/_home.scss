@@ -9,10 +9,6 @@ html {
     background-color: #28C9CD;
 }
 
-header {
-    display:hidden;
-}
-
 body {
     height: 75%;
     background-color: #252525;
@@ -28,7 +24,23 @@ body h1 {
 
 main {
     display: flex;
-    padding: 25px 10px 30px 0px;
+    padding: 10px 10px 30px 0px;
+}
+
+.search {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 80%;
+}
+
+#searchButton{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    z-index: 2;
 }
 
 article h1 {
@@ -36,10 +48,16 @@ article h1 {
     font-size: 125%;
     padding: 25px 25px 25px 25px;
 }
+
+article h2 {
+    padding: 10px 10px 10px 10px;
+}
+
 article p {
     padding: 100px 25px 25px 25px;
     width: 60%;
     height: 50%;
+    font-family: 'Ramabhadra', sans-serif;
 }
 
 
@@ -67,6 +85,14 @@ article p {
     color:white;
 }
 
+.boxOne button:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.boxOne:hover {
+    background-color: white;
+    color:black;
+}
 .imgCont1 {
     display: flex;
     justify-content: center;
@@ -89,9 +115,6 @@ article p {
     border-radius: 15px;
 }
 
-.boxOne button:hover{
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
 
 .boxTwo button{
     height:25px;
@@ -102,6 +125,11 @@ article p {
     margin: 150px 15px 15px 15px;
     cursor:pointer;
     color:white;
+}
+
+.boxTwo:hover {
+    background-color: white;
+    color:black;
 }
 
 .boxTwo button:hover{
@@ -128,6 +156,10 @@ article p {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+#searchButton{
+    display: none;
+}
+
 body {
     height: 75%;
     background-color: #252525;
@@ -139,13 +171,12 @@ body h1 {
     font-size: 125%;
 }
 
+
 main {
    width: 100%;
    height: 75px;
    position: relative;
    margin-top: -16px;
-
-
 }
 
 article h1 {
@@ -153,14 +184,88 @@ article h1 {
     font-size: 125%;
     padding: 25px 25px 25px 25px;
 }
+
+article h2 {
+    padding: 10px 10px 10px 10px;
+}
+
 article p {
     padding: 25px 25px 25px 25px;
     width: 60%;
+    font-family: 'Ramabhadra', sans-serif;
 }
 
 
 .mainItems {
     display: flex;
+}
+
+.imgCont1 {
+    display: flex;
+}
+
+.imgCont1 img {
+    width: 60%;
+    height: auto;
+    z-index: 1;
+}
+
+.imgCont2 {
+    display: flex;
+}
+
+.imgCont2 img {
+    width: 60%;
+    height: auto;
+    z-index: 1;
+}
+
+.boxOne {
+    display: flex;
+    position: relative;;
+    background-color: #43464F;
+    width: 100%;
+    height: 40%;
+    margin: 15px 15px 15px 15px;
+    border-radius: 15px;
+}
+.boxOne button {
+    height:25px;
+    width:40px;
+    border-radius: 15px;
+    background-image: linear-gradient(#292FE5,#28C9CD);
+    border: none;
+    margin: 150px 15px 15px 15px;
+    cursor:pointer;
+    color:white;
+}
+
+.boxOne button:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.boxTwo {
+    display: flex;
+    position: relative;;
+    background-color: #43464F;
+    width: 100%;
+    height: 40%;
+    margin: 15px 15px 15px 15px;
+    border-radius: 15px;
+}
+.boxTwo button {
+    height:25px;
+    width:40px;
+    border-radius: 15px;
+    background-image: linear-gradient(#292FE5,#28C9CD);
+    border: none;
+    margin: 150px 15px 15px 15px;
+    cursor:pointer;
+    color:white;
+}
+
+.boxTwo button:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 }
 
@@ -170,6 +275,10 @@ article p {
         font-family: 'Nunito Sans', sans-serif;
     }
     
+    #searchButton{
+    display: none;
+}
+
     body {
         height: 75%;
         background-color: #252525;
@@ -195,13 +304,88 @@ article p {
         font-size: 125%;
         padding: 25px 25px 25px 25px;
     }
+
+    article h2 {
+         padding: 10px 10px 10px 10px;
+    }
+
     article p {
         padding: 25px 25px 25px 25px;
-        width: 60%;
+        width: 40%;
+        font-family: 'Ramabhadra', sans-serif;
     }
     
     
     .mainItems {
         display: flex;
+    }
+
+    .imgCont1 {
+        display: flex;
+    }
+    
+    .imgCont1 img {
+        width: 40%;
+        height: auto;
+        z-index: 1;
+    }
+    
+    .imgCont2 {
+        display: flex;
+    }
+    
+    .imgCont2 img {
+        width: 60%;
+        height: auto;
+        z-index: 1;
+    }
+
+
+    .boxOne {
+        display: flex;
+        position: relative;;
+        background-color: #43464F;
+        width: 100%;
+        height: 40%;
+        margin: 15px 15px 15px 15px;
+        border-radius: 15px;
+    }
+    .boxOne button {
+        height:25px;
+        width:40px;
+        border-radius: 15px;
+        background-image: linear-gradient(#292FE5,#28C9CD);
+        border: none;
+        margin: 150px 15px 15px 15px;
+        cursor:pointer;
+        color:white;
+    }
+    
+    .boxOne button:hover{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    
+    .boxTwo {
+        display: flex;
+        position: relative;;
+        background-color: #43464F;
+        width: 100%;
+        height: 40%;
+        margin: 15px 15px 15px 15px;
+        border-radius: 15px;
+    }
+    .boxTwo button {
+        height:25px;
+        width:40px;
+        border-radius: 15px;
+        background-image: linear-gradient(#292FE5,#28C9CD);
+        border: none;
+        margin: 150px 15px 15px 15px;
+        cursor:pointer;
+        color:white;
+    }
+    
+    .boxTwo button:hover{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     }
 }
