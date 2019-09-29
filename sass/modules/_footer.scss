@@ -1,0 +1,63 @@
+/*-------MOBILE------------------*/
+@media (max-width:500px) {
+
+footer{
+    justify-content: center;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 0.8rem;
+}
+}
+
+/*Tablet-------------------------------*/
+@media (max-width:768px) and (min-width: 501px){
+    footer{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    footer h3 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+
+
+}
+
+/*Desktop-------------------------------*/
+@media (min-width:769px){
+    footer{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    footer h3 {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 0.8rem;
+    }
+
+
+}

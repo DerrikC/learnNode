@@ -6,6 +6,7 @@ aside {
     background-image: linear-gradient(#292FE5,#28C9CD);
     //^sidenav gradient
     border-radius: 30px;
+    //^round corners of the nav bar
     list-style: none;
     display: flex;
     min-height: 500px;
@@ -32,7 +33,13 @@ nav ul {
     // ^allows nav list turn left
     font-family: 'Nunito Sans', sans-serif;
     padding: 0px 0px 75px 0px;
-    
+}
+
+ul li:hover {
+    border-right: 4px solid #fff;
+    padding-right: 6px;
+    cursor:pointer;
+    // ^border lines have to be set in reverse to adjust for side navigation
 }
 }
 
@@ -60,6 +67,12 @@ nav ul {
         height: 60px;
         width:60px;
         position: absolute
+    }
+
+    ul li:hover {
+        border-top: 4px solid #fff;
+        padding-top: 6px;
+        cursor:pointer;
     }
    
 }
@@ -90,4 +103,9 @@ nav ul {
         position: absolute
     }
    
+    ul li:hover {
+        border-top: 4px solid #fff;
+        padding-top: 6px;
+        cursor:pointer;
+    }
 }
