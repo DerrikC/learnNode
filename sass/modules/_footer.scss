@@ -3,10 +3,12 @@
 
 footer{
     justify-content: center;
-    position: absolute;
-    height: 40px;
+    height:0px;
     width: 100%;
     bottom: 0;
+    position: absolute;
+    z-index: 0;
+   
 }
 
 footer h3 {
@@ -15,6 +17,7 @@ footer h3 {
     color: white;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8rem;
+    padding: 15px;
 }
 }
 
@@ -23,7 +26,6 @@ footer h3 {
     footer{
         display: flex;
         justify-content: center;
-        position: absolute;
         height: 40px;
         width: 100%;
         bottom: 0;

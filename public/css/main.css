@@ -7,14 +7,24 @@
     background-color: #28C9CD; }
 
   body {
-    height: 75%;
-    background-color: #252525;
+    height: 85%;
+    min-height: 500px;
+    background-color: none;
     color: white;
     display: flex;
-    border-radius: 0px 0px 60px 60px; }
+    border-radius: 0px 0px 60px 60px;
+    position: absolute; }
 
   body h1 {
     font-size: 125%; }
+
+  #pageBack {
+    background-color: #252525;
+    color: white;
+    display: flex;
+    border-radius: 0px 0px 60px 60px;
+    min-height: 500px;
+    width: 100%; }
 
   main {
     display: flex;
@@ -324,7 +334,8 @@
     border-radius: 30px;
     list-style: none;
     display: flex;
-    min-height: 500px;
+    min-height: 450px;
+    max-height: 550px;
     width: 50px; }
 
   .logo img {
@@ -404,23 +415,24 @@
 @media (max-width: 500px) {
   footer {
     justify-content: center;
-    position: absolute;
-    height: 40px;
+    height: 0px;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    position: absolute;
+    z-index: 0; }
 
   footer h3 {
     display: flex;
     justify-content: center;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+    padding: 15px; } }
 /*Tablet-------------------------------*/
 @media (max-width: 768px) and (min-width: 501px) {
   footer {
     display: flex;
     justify-content: center;
-    position: absolute;
     height: 40px;
     width: 100%;
     bottom: 0; }
