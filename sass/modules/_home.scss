@@ -10,16 +10,29 @@ html {
 }
 
 body {
-    height: 75%;
-    background-color: #252525;
+    height: 85%;
+    min-height: 500px;
+    // ^allows the footer to stay in place, and not stick to window bottom
+    background-color: none;
     color:white;
     display: flex;
     border-radius: 0px 0px 60px 60px;
+    position: absolute;
 }
 
 
 body h1 {
     font-size: 125%;
+}
+
+#pageBack {
+    // ^allows the footer to stay in place, and not stick to window bottom
+    background-color: #252525;
+    color:white;
+    display: flex;
+    border-radius: 0px 0px 60px 60px;
+    min-height:500px;
+    width: 100%;
 }
 
 main {
