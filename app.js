@@ -5,9 +5,11 @@ const path = require('path');// comes with node, lets us navigate the file syste
 //heroku assigned port
 
 const port = process.env.PORT || 3000; // a double pipe "||" means "or"
-const app = (express.static('public'));
 
-app.use(express.static)
+const app = express();
+
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
     console.log('at the home route');
     res.sendFile(path.join(__dirname + '/views/index.html'));
