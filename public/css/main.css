@@ -4,9 +4,11 @@
     font-family: 'Nunito Sans', sans-serif; }
 
   html {
-    background-color: #28C9CD; }
+    background-color: #28C9CD;
+    max-width: 100%; }
 
   body {
+    max-width: 100%;
     height: 85%;
     min-height: 500px;
     background-color: none;
@@ -28,15 +30,31 @@
 
   main {
     display: flex;
-    padding: 10px 10px 30px 0px; }
+    padding: 10px 10px 30px 0px;
+    max-width: 100%;
+    width: 500px; }
 
   .search {
     height: 40px;
     width: 40px;
     position: absolute;
-    margin-left: 80%; }
+    margin-left: 75%; }
 
   #searchButton {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    z-index: 2; }
+
+  .menu {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 85%; }
+
+  #menuButton {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -140,6 +158,9 @@
   #searchButton {
     display: none; }
 
+  #menuButton {
+    display: none; }
+
   body {
     height: 75%;
     background-color: #252525;
@@ -175,7 +196,7 @@
 
   .imgCont1 img {
     width: 60%;
-    height: auto;
+    height: 60%;
     z-index: 1; }
 
   .imgCont2 {
@@ -183,7 +204,7 @@
 
   .imgCont2 img {
     width: 60%;
-    height: auto;
+    height: 60%;
     z-index: 1; }
 
   .boxOne {
@@ -237,6 +258,9 @@
   #searchButton {
     display: none; }
 
+  #menuButton {
+    display: none; }
+
   body {
     height: 75%;
     background-color: #252525;
@@ -272,7 +296,7 @@
 
   .imgCont1 img {
     width: 40%;
-    height: auto;
+    height: 40%;
     z-index: 1; }
 
   .imgCont2 {
@@ -280,7 +304,7 @@
 
   .imgCont2 img {
     width: 60%;
-    height: auto;
+    height: 60%;
     z-index: 1; }
 
   .boxOne {
@@ -298,7 +322,7 @@
     border-radius: 15px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 350px;
     cursor: pointer;
     color: white; }
 
@@ -320,7 +344,7 @@
     border-radius: 15px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 350px;
     cursor: pointer;
     color: white; }
 
@@ -431,34 +455,39 @@
 /*Tablet-------------------------------*/
 @media (max-width: 768px) and (min-width: 501px) {
   footer {
-    display: flex;
+    display: none;
     justify-content: center;
-    height: 40px;
+    height: 0px;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    position: absolute;
+    z-index: 0; }
 
   footer h3 {
     display: flex;
     justify-content: center;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+    padding: 15px; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   footer {
-    display: flex;
+    display: none;
     justify-content: center;
-    position: absolute;
-    height: 40px;
+    height: 0px;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    position: relative;
+    z-index: 0; }
 
   footer h3 {
     display: flex;
     justify-content: center;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+    padding: 15px; } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
