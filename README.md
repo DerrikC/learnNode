@@ -1,4 +1,4 @@
-![ArtPeaces Logo](images/artPeaces_Logo2.svg)
+![ArtPeaces Logo](..public/images/artPeaces_Logo2.svg)
 
 # Project Title 
 
@@ -13,8 +13,8 @@ Download repo to your computer.
 
 
 ### Installing
-Use preferred browser > https://herokunode-practice.herokuapp.com/ 
-OR
+Use preferred browser to view > https://herokunode-practice.herokuapp.com/ 
+
 Clone repo > https://github.com/DerrikC/learnNode.git
 
 
