@@ -52,7 +52,7 @@ ul a:hover {
 }
 
 /*Tablet-------------------------------*/
-@media (min-width: 501px) and (max-width:768px){
+@media (max-width:768px) and (min-width: 501px) {
     nav {
         background-color: #28c2ce;
         background-image: linear-gradient(to right, #292FE5,#28C9CD);

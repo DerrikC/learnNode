@@ -7,21 +7,22 @@
 
 html {
     background-color: #28C9CD;
-    max-width: 100%;
+    // max-width: 100%;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    height: 85%;
-    min-height: 500px;//allows the footer to stay in place, and not stick to window bottom
-    background-color: none;
-    color:white;
-    display: flex;
-    border-radius: 0px 0px 60px 60px;
-    position: absolute;
-}
+// body {
+//     // margin: 0;
+//     // padding: 0;
+//     // max-width: 100%;
+//     // height: 85%;
+//     // // min-height: 500px;//allows the footer to stay in place, and not stick to window bottom
+//     // background-color: none;
+//     // color:white;
+//     // display: flex;
+//     // border-radius: 0px 0px 60px 60px;
+//     // position: absolute;
+//     // // width: 500px;
+// }
 
 .details {
     display: none;
@@ -33,13 +34,12 @@ body {
     display: flex;
     border-radius: 0px 0px 60px 60px;
     min-height:500px;
-    width: 500px;
+    min-width: 360px;
 }
 
 main {
     display: flex;
     padding: 10px 10px 30px 0px;
-    width: 100%;
 }
 
 .search {
@@ -181,7 +181,7 @@ main {
 }
 }
 /*Tablet-------------------------------*/
-@media (min-width: 501px) and (max-width:768px) {
+@media  (max-width:768px) and (min-width: 501px){
 
 
 * {
@@ -338,7 +338,7 @@ main {
     .circleAccent {
         
         bottom: 0;
-        clip-path: circle(58.8% at 100% 8%);
+        -webkit-clip-path: circle(58.8% at 100% 8%);
         background-color: #252525;
         z-index: -2;
         width: 100%;
