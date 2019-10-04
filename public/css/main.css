@@ -205,13 +205,16 @@
 
   .boxOne button {
     height: 25px;
-    width: 40px;
-    border-radius: 15px;
+    width: 50px;
+    border-radius: 25px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 0px;
     cursor: pointer;
-    color: white; }
+    color: white;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex; }
 
   .boxOne button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
@@ -235,12 +238,15 @@
   .boxTwo button {
     height: 25px;
     width: 40px;
-    border-radius: 15px;
+    border-radius: 25px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 0px;
     cursor: pointer;
-    color: white; }
+    color: white;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex; }
 
   .boxTwo button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
@@ -262,7 +268,8 @@
   .circleAccent {
     bottom: 0;
     -webkit-clip-path: circle(58.8% at 100% 8%);
-    background-color: #252525;
+    clip-path: circle(58.8% at 100% 8%);
+    background-color: #d6d9e0;
     z-index: -2;
     width: 100%;
     height: 100%;
@@ -318,7 +325,7 @@
   .boxOne {
     display: flex;
     position: relative;
-    background-color: #43464F;
+    background-color: #55596d;
     width: 100%;
     height: 200px;
     margin: 15px 15px 15px 15px;
@@ -328,12 +335,15 @@
     height: 40px;
     width: 100px;
     border-radius: 20px;
-    background-image: linear-gradient(#292FE5, #28C9CD);
+    background-color: white;
     border: none;
     margin: 150px 15px 15px 15px;
     cursor: pointer;
-    color: white;
-    right: 0; }
+    color: #55596d;
+    right: 0;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex; }
 
   .boxOne button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
@@ -341,7 +351,7 @@
   .boxTwo {
     display: flex;
     position: relative;
-    background-color: #43464F;
+    background-color: #55596d;
     width: 100%;
     height: 200px;
     margin: 15px 15px 15px 15px;
@@ -351,12 +361,15 @@
     height: 40px;
     width: 100px;
     border-radius: 20px;
-    background-image: linear-gradient(#292FE5, #28C9CD);
+    background-color: white;
     border: none;
     margin: 150px 15px 15px 15px;
     cursor: pointer;
-    color: white;
-    right: 0; }
+    color: #55596d;
+    right: 0;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex; }
 
   .boxTwo button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
@@ -493,7 +506,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8rem;
     padding: 15px;
-    margin-top: 25%; } }
+    margin-top: 100%; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   footer {
