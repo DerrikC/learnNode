@@ -64,21 +64,21 @@
     border: none;
     z-index: 2; }
 
-  article h1 {
+  #main-content h1 {
     color: white;
     font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  article h2 {
+  #main-content h2 {
     padding: 10px 10px 10px 10px; }
 
-  article p {
+  #main-content p {
     padding: 100px 25px 25px 25px;
     width: 60%;
     height: 50%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .mainItems {
+  .main-items {
     display: flex; }
 
   .boxOne {
@@ -177,20 +177,20 @@
     position: relative;
     margin-top: -16px; }
 
-  article h1 {
+  #main-content h1 {
     color: white;
     font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  article h2 {
+  #main-content h2 {
     padding: 10px 10px 10px 10px; }
 
-  article p {
+  #main-content p {
     padding: 25px 25px 25px 25px;
     width: 60%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .mainItems {
+  .main-items {
     display: flex; }
 
   .imgCont1 {
@@ -277,20 +277,20 @@
     position: relative;
     margin-top: -16px; }
 
-  article h1 {
+  #main-content h1 {
     color: white;
     font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  article h2 {
+  #main-content h2 {
     padding: 10px 10px 10px 10px; }
 
-  article p {
+  #main-content p {
     padding: 25px 25px 25px 25px;
     width: 40%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .mainItems {
+  .main-items {
     display: flex; }
 
   .imgCont1 {
