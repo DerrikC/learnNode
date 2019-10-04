@@ -19,8 +19,8 @@
     border-radius: 0px 0px 60px 60px;
     position: absolute; }
 
-  body h1 {
-    font-size: 125%; }
+  .details {
+    display: none; }
 
   #pageBack {
     background-color: #252525;
@@ -28,13 +28,12 @@
     display: flex;
     border-radius: 0px 0px 60px 60px;
     min-height: 500px;
-    width: 100%; }
+    width: 500px; }
 
   main {
     display: flex;
     padding: 10px 10px 30px 0px;
-    max-width: 100%;
-    width: 500px; }
+    width: 100%; }
 
   .search {
     height: 40px;
@@ -64,21 +63,20 @@
     border: none;
     z-index: 2; }
 
-  #main-content h1 {
+  #content h1 {
     color: white;
-    font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  #main-content h2 {
+  #content p {
     padding: 10px 10px 10px 10px; }
 
-  #main-content p {
+  #content h2 {
     padding: 100px 25px 25px 25px;
     width: 60%;
     height: 50%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .main-items {
+  .items {
     display: flex; }
 
   .boxOne {
@@ -153,7 +151,7 @@
     position: absolute;
     z-index: 1; } }
 /*Tablet-------------------------------*/
-@media (max-width: 768px) and (min-width: 501px) {
+@media (min-width: 501px) and (max-width: 768px) {
   * {
     font-family: 'Nunito Sans', sans-serif; }
 
@@ -177,20 +175,20 @@
     position: relative;
     margin-top: -16px; }
 
-  #main-content h1 {
+  #content h1 {
     color: white;
     font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  #main-content h2 {
+  #content p {
     padding: 10px 10px 10px 10px; }
 
-  #main-content p {
-    padding: 25px 25px 25px 25px;
+  #content h2 {
+    padding: 10px 10px 10px 10px;
     width: 60%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .main-items {
+  .items {
     display: flex; }
 
   .imgCont1 {
@@ -214,7 +212,7 @@
     position: relative;
     background-color: #43464F;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin: 15px 15px 15px 15px;
     border-radius: 15px; }
 
@@ -231,12 +229,19 @@
   .boxOne button:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
 
+  .boxOne:hover {
+    background-color: white;
+    color: black; }
+
+  .boxOne h1:hover {
+    color: black; }
+
   .boxTwo {
     display: flex;
     position: relative;
     background-color: #43464F;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin: 15px 15px 15px 15px;
     border-radius: 15px; }
 
@@ -251,7 +256,14 @@
     color: white; }
 
   .boxTwo button:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+  .boxTwo:hover {
+    background-color: white;
+    color: black; }
+
+  .boxTwo h1:hover {
+    color: black; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   * {
@@ -268,29 +280,26 @@
     background-color: #252525;
     color: white; }
 
-  body h1 {
-    font-size: 125%; }
-
   main {
     width: 100%;
     height: 75px;
     position: relative;
     margin-top: -16px; }
 
-  #main-content h1 {
+  #content h1 {
     color: white;
     font-size: 125%;
     padding: 25px 25px 25px 25px; }
 
-  #main-content h2 {
+  #content p {
     padding: 10px 10px 10px 10px; }
 
-  #main-content p {
-    padding: 25px 25px 25px 25px;
+  #content h2 {
+    padding: 10px 10px 10px 10px;
     width: 40%;
     font-family: 'Ramabhadra', sans-serif; }
 
-  .main-items {
+  .items {
     display: flex; }
 
   .imgCont1 {
@@ -314,17 +323,17 @@
     position: relative;
     background-color: #43464F;
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin: 15px 15px 15px 15px;
     border-radius: 15px; }
 
   .boxOne button {
     height: 40px;
     width: 100px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 15px;
+    margin: 150px 15px 15px 15px;
     cursor: pointer;
     color: white;
     right: 0; }
@@ -337,17 +346,17 @@
     position: relative;
     background-color: #43464F;
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin: 15px 15px 15px 15px;
     border-radius: 15px; }
 
   .boxTwo button {
     height: 40px;
     width: 100px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-image: linear-gradient(#292FE5, #28C9CD);
     border: none;
-    margin: 15px;
+    margin: 150px 15px 15px 15px;
     cursor: pointer;
     color: white;
     right: 0; }
@@ -377,20 +386,22 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
     -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    float: left; }
+    -moz-transform: rotate(-180deg); }
 
   nav ul {
     display: flex;
     font-family: 'Nunito Sans', sans-serif;
     padding: 0px 0px 75px 0px; }
 
-  ul li:hover {
+  ul a:hover {
     border-right: 4px solid #fff;
     padding-right: 6px;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  li a {
+    padding: 15px; } }
 /*Tablet-------------------------------*/
-@media (max-width: 768px) and (min-width: 501px) {
+@media (min-width: 501px) and (max-width: 768px) {
   nav {
     background-color: #28c2ce;
     background-image: linear-gradient(to right, #292FE5, #28C9CD);
@@ -414,7 +425,10 @@
   ul li:hover {
     border-top: 4px solid #fff;
     padding-top: 6px;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  li a {
+    padding: 15px; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   aside {
@@ -443,7 +457,10 @@
   ul li:hover {
     border-top: 4px solid #fff;
     padding-top: 6px;
-    cursor: pointer; } }
+    cursor: pointer; }
+
+  li a {
+    padding: 15px; } }
 /*-------MOBILE------------------*/
 @media (max-width: 500px) {
   footer {

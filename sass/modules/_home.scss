@@ -15,8 +15,7 @@ body {
     padding: 0;
     max-width: 100%;
     height: 85%;
-    min-height: 500px;
-    // ^allows the footer to stay in place, and not stick to window bottom
+    min-height: 500px;//allows the footer to stay in place, and not stick to window bottom
     background-color: none;
     color:white;
     display: flex;
@@ -24,26 +23,23 @@ body {
     position: absolute;
 }
 
-
-body h1 {
-    font-size: 125%;
+.details {
+    display: none;
 }
 
 #pageBack {
-    // ^allows the footer to stay in place, and not stick to window bottom
     background-color: #252525;
     color:white;
     display: flex;
     border-radius: 0px 0px 60px 60px;
     min-height:500px;
-    width: 100%;
+    width: 500px;
 }
 
 main {
     display: flex;
     padding: 10px 10px 30px 0px;
-    max-width: 100%;
-    width: 500px;
+    width: 100%;
 }
 
 .search {
@@ -78,17 +74,16 @@ main {
     z-index: 2;
 }
 
-#main-content h1 {
+#content h1 {
     color:white;
-    font-size: 125%;
     padding: 25px 25px 25px 25px;
 }
 
-#main-content h2 {
+#content p {
     padding: 10px 10px 10px 10px;
 }
 
-#main-content p {
+#content h2 {
     padding: 100px 25px 25px 25px;
     width: 60%;
     height: 50%;
@@ -96,7 +91,7 @@ main {
 }
 
 
-.main-items {
+.items {
     display: flex;
 }
 
@@ -109,6 +104,7 @@ main {
     margin: 15px 15px 15px 15px;
     border-radius: 15px;
 }
+
 .boxOne button {
     height:25px;
     width:40px;
@@ -160,6 +156,7 @@ main {
     margin: 150px 15px 15px 15px;
     cursor:pointer;
     color:white;
+
 }
 
 .boxTwo:hover {
@@ -184,7 +181,7 @@ main {
 }
 }
 /*Tablet-------------------------------*/
-@media (max-width:768px) and (min-width: 501px){
+@media (min-width: 501px) and (max-width:768px) {
 
 
 * {
@@ -218,24 +215,24 @@ main {
    margin-top: -16px;
 }
 
-#main-content h1 {
+#content h1 {
     color:white;
     font-size: 125%;
     padding: 25px 25px 25px 25px;
 }
 
-#main-content h2 {
+#content p {
     padding: 10px 10px 10px 10px;
 }
 
-#main-content p {
-    padding: 25px 25px 25px 25px;
+#content h2 {
+    padding: 10px 10px 10px 10px;
     width: 60%;
     font-family: 'Ramabhadra', sans-serif;
 }
 
 
-.main-items {
+.items {
     display: flex;
 }
 
@@ -264,7 +261,7 @@ main {
     position: relative;;
     background-color: #43464F;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin: 15px 15px 15px 15px;
     border-radius: 15px;
 }
@@ -283,12 +280,21 @@ main {
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
+.boxOne:hover {
+    background-color: white;
+    color:black;
+}
+
+.boxOne h1:hover {
+    color:black;
+}
+
 .boxTwo {
     display: flex;
     position: relative;;
     background-color: #43464F;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin: 15px 15px 15px 15px;
     border-radius: 15px;
 }
@@ -306,6 +312,15 @@ main {
 .boxTwo button:hover{
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
+
+.boxTwo:hover {
+    background-color: white;
+    color:black;
+}
+
+.boxTwo h1:hover {
+    color:black;
+}
 }
 
 /*Desktop-------------------------------*/
@@ -317,7 +332,7 @@ main {
     
     #searchButton{
     display: none;
-}
+    }
 
 #menuButton{
     display: none;
@@ -329,10 +344,6 @@ main {
     }
     
     
-    body h1 {
-        font-size: 125%;
-    }
-    
     main {
        width: 100%;
        height: 75px;
@@ -340,24 +351,25 @@ main {
        margin-top: -16px;
     }
     
-    #main-content h1 {
+    #content h1 {
         color:white;
         font-size: 125%;
         padding: 25px 25px 25px 25px;
     }
 
-    #main-content h2 {
+    #content p {
          padding: 10px 10px 10px 10px;
     }
 
-    #main-content p {
-        padding: 25px 25px 25px 25px;
+    #content h2 {
+        padding: 10px 10px 10px 10px;
         width: 40%;
+        
         font-family: 'Ramabhadra', sans-serif;
     }
     
     
-    .main-items {
+    .items {
         display: flex;
     }
 
@@ -387,7 +399,7 @@ main {
         position: relative;;
         background-color: #43464F;
         width: 100%;
-        height: 300px;
+        height: 200px;
         margin: 15px 15px 15px 15px;
         border-radius: 15px;
     }
@@ -396,10 +408,10 @@ main {
     .boxOne button {
         height:40px;
         width:100px;
-        border-radius: 15px;
+        border-radius: 20px;
         background-image: linear-gradient(#292FE5,#28C9CD);
         border: none;
-        margin: 15px;
+        margin: 150px 15px 15px 15px;
         cursor:pointer;
         color:white;
         right: 0;
@@ -414,7 +426,7 @@ main {
         position: relative;
         background-color: #43464F;
         width: 100%;
-        height: 300px;
+        height: 200px;
         margin: 15px 15px 15px 15px;
         border-radius: 15px;
     }
@@ -422,10 +434,10 @@ main {
     .boxTwo button {
         height:40px;
         width:100px;
-        border-radius: 15px;
+        border-radius: 20px;
         background-image: linear-gradient(#292FE5,#28C9CD);
         border: none;
-        margin: 15px;
+        margin: 150px 15px 15px 15px;
         cursor:pointer;
         color:white;
         right: 0;
