@@ -164,7 +164,8 @@
   body {
     height: 75%;
     background-color: #252525;
-    color: white; }
+    color: white;
+    width: 100%; }
 
   body h1 {
     font-size: 125%; }
@@ -195,16 +196,16 @@
     display: flex; }
 
   .imgCont1 img {
-    width: 60%;
-    height: 60%;
+    width: 30%;
+    height: 30%;
     z-index: 1; }
 
   .imgCont2 {
     display: flex; }
 
   .imgCont2 img {
-    width: 60%;
-    height: 60%;
+    width: 30%;
+    height: 30%;
     z-index: 1; }
 
   .boxOne {
@@ -272,12 +273,22 @@
   #searchButton {
     display: none; }
 
+  .circleAccent {
+    bottom: 0;
+    clip-path: circle(58.8% at 100% 8%);
+    background-color: #252525;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 900px; }
+
   #menuButton {
     display: none; }
 
   body {
     height: 75%;
-    background-color: #252525;
+    background-color: white;
     color: white; }
 
   main {
@@ -496,7 +507,7 @@
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8rem;
     padding: 15px;
-    margin-top: 900px; } }
+    margin-top: 25%; } }
 /*Desktop-------------------------------*/
 @media (min-width: 769px) {
   footer {
@@ -511,11 +522,11 @@
   footer h3 {
     display: flex;
     justify-content: center;
-    color: white;
+    color: #252525;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 0.8rem;
     padding: 15px;
-    margin-top: 2000px; } }
+    margin-top: 100%; } }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
