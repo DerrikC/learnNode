@@ -268,13 +268,17 @@ main {
 }
 .boxOne button {
     height:25px;
-    width:40px;
-    border-radius: 15px;
+    width:50px;
+    border-radius: 25px;
     background-image: linear-gradient(#292FE5,#28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 0px;
     cursor:pointer;
     color:white;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex;
+
 }
 
 .boxOne button:hover{
@@ -302,12 +306,15 @@ main {
 .boxTwo button {
     height:25px;
     width:40px;
-    border-radius: 15px;
+    border-radius: 25px;
     background-image: linear-gradient(#292FE5,#28C9CD);
     border: none;
-    margin: 150px 15px 15px 15px;
+    margin: 150px 15px 15px 0px;
     cursor:pointer;
     color:white;
+    padding: 10px 40px 25px 40px;
+    justify-content: center;
+    display: flex;
 }
 
 .boxTwo button:hover{
@@ -336,10 +343,10 @@ main {
     }
 
     .circleAccent {
-        
         bottom: 0;
         -webkit-clip-path: circle(58.8% at 100% 8%);
-        background-color: #252525;
+        clip-path: circle(58.8% at 100% 8%);
+        background-color:rgb(214, 217, 224);
         z-index: -2;
         width: 100%;
         height: 100%;
@@ -357,7 +364,6 @@ main {
     }
     
 
-    
     main {
        width: 100%;
        height: 75px;
@@ -410,8 +416,8 @@ main {
 
     .boxOne {
         display: flex;
-        position: relative;;
-        background-color: #43464F;
+        position: relative;
+        background-color: rgb(85, 89, 109);
         width: 100%;
         height: 200px;
         margin: 15px 15px 15px 15px;
@@ -423,12 +429,15 @@ main {
         height:40px;
         width:100px;
         border-radius: 20px;
-        background-image: linear-gradient(#292FE5,#28C9CD);
+        background-color:white;
         border: none;
         margin: 150px 15px 15px 15px;
         cursor:pointer;
-        color:white;
+        color: rgb(85, 89, 109);
         right: 0;
+        padding: 10px 40px 25px 40px;
+        justify-content: center;
+        display: flex;
     }
     
     .boxOne button:hover{
@@ -438,7 +447,7 @@ main {
     .boxTwo {
         display: flex;
         position: relative;
-        background-color: #43464F;
+        background-color: rgb(85, 89, 109);
         width: 100%;
         height: 200px;
         margin: 15px 15px 15px 15px;
@@ -449,12 +458,15 @@ main {
         height:40px;
         width:100px;
         border-radius: 20px;
-        background-image: linear-gradient(#292FE5,#28C9CD);
+        background-color:white;
         border: none;
         margin: 150px 15px 15px 15px;
         cursor:pointer;
-        color:white;
+        color: rgb(85, 89, 109);
         right: 0;
+        padding: 10px 40px 25px 40px;
+        justify-content: center;
+        display: flex;
     }
     
     .boxTwo button:hover{
