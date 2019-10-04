@@ -1,4 +1,4 @@
-![ArtPeaces Logo](../public/images/artPeaces_Logo2.svg)
+![ArtPeaces Logo](/public/images/artPeaces_Logo2.svg)
 
 # Project Title 
 
