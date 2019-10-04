@@ -4,8 +4,6 @@
 
  HW1 - ArtPeaces Product Gallery 
 
- ![ArtPeaces Mockup](/public/images/artPeaces_app.jpg)
-
 ## Description
 
 I designed one page of an e-commerce application for art prints that could be sold online. 
@@ -27,6 +25,7 @@ Clone repo > https://github.com/DerrikC/learnNode.git
 Type the Following in the Terminal:
 
 npm install
+
 node app
 
 > To make changes in SASS
@@ -51,4 +50,5 @@ This project is licensed under the derrikxavier License
 
 ## Inspiration
 @mousecrafted
+
 SingularityNet 
